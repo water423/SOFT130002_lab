@@ -3,79 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 <header>
-    <nav><a href="http://localhost:63342/lab2/index.html?_ijt=ro5a7jm3oo0i92jk6t3h7e0j9o">主页</a></nav>
+    <nav><a href="index.html">主页</a></nav>
 </header>
 <h1>创建帐户</h1>
 <section>
     <form action="#" method="POST">
-            <p>
-                用户名(大小写字母、数字和下划线):<br>
-                <input type="text" name="name" required pattern="^\w+$">
-            </p>
-            <p>
-                密码(密码要求 8 位以上，只允许大小写字母加数字)<br>
-                <input type="password" name="password" required pattern="^[A-Za-z0-9]+$" minlength="8">
-            </p>
-            <p>
-                确认密码<br>
-                <input type="password" name="repassword" required pattern="^[A-Za-z0-9]+$" minlength="8">
-            </p>
-            <p>
-                居住地<br>
-                <select name="area">
-                    <option >北京</option>
-                    <option selected>上海</option>
-                    <option >天津</option>
-                    <option >重庆</option>
-                    <option >河北</option>
-                    <option >山西</option>
-                    <option >吉林</option>
-                    <option >辽宁</option>
-                    <option >黑龙江</option>
-                    <option >陕西</option>
-                    <option >甘肃</option>
-                    <option >青海</option>
-                    <option >山东</option>
-                    <option >福建</option>
-                    <option >浙江</option>
-                    <option >台湾</option>
-                    <option >河南</option>
-                    <option >湖北</option>
-                    <option >湖南</option>
-                    <option >江西</option>
-                    <option >江苏</option>
-                    <option >安徽</option>
-                    <option >广东</option>
-                    <option >海南</option>
-                    <option >四川</option>
-                    <option >贵州</option>
-                    <option >云南</option>
-                    <option >内蒙古自治区</option>
-                    <option >新疆维吾尔自治区</option>
-                    <option >宁夏回族自治区</option>
-                    <option >广西壮族自治区</option>
-                    <option >西藏自治区</option>
-                    <option >香港特别行政区</option>
-                    <option >澳门特别行政区</option>
-                </select>
-            </p>
         <p>
-            手机号码<br>
+            <span>用户名(大小写字母、数字和下划线):</span><br>
+            <input type="text" name="name" required pattern="^\w+$">
+        </p>
+        <p>
+            <span>密码(密码要求 8 位以上，只允许大小写字母加数字)</span><br>
+            <input type="password" name="password" required pattern="^[A-Za-z0-9]+$" minlength="8">
+        </p>
+        <p>
+            <span>确认密码</span><br>
+            <input type="password" name="repassword" required pattern="^[A-Za-z0-9]+$" minlength="8">
+        </p>
+        <p>
+            <span>居住地</span><br>
+            <select name="area">
+                <option >北京</option>
+                <option selected>上海</option>
+                <option >天津</option>
+                <option >重庆</option>
+                <option >河北</option>
+                <option >山西</option>
+                <option >吉林</option>
+                <option >辽宁</option>
+                <option >黑龙江</option>
+                <option >陕西</option>
+                <option >甘肃</option>
+                <option >青海</option>
+                <option >山东</option>
+                <option >福建</option>
+                <option >浙江</option>
+                <option >台湾</option>
+                <option >河南</option>
+                <option >湖北</option>
+                <option >湖南</option>
+                <option >江西</option>
+                <option >江苏</option>
+                <option >安徽</option>
+                <option >广东</option>
+                <option >海南</option>
+                <option >四川</option>
+                <option >贵州</option>
+                <option >云南</option>
+                <option >内蒙古自治区</option>
+                <option >新疆维吾尔自治区</option>
+                <option >宁夏回族自治区</option>
+                <option >广西壮族自治区</option>
+                <option >西藏自治区</option>
+                <option >香港特别行政区</option>
+                <option >澳门特别行政区</option>
+            </select>
+        </p>
+        <p>
+            <span>手机号码</span><br>
             <input type="text" name="telephone" required pattern="^1\d{10}$">
         </p>
         <p>
-            常用设备<br>
+            <span>常用设备</span><br>
             <input type="checkbox" name="PC" >PC<br>
             <input type="checkbox" name="PlayStation 4" >PlayStation 4<br>
             <input type="checkbox" name="XBox One" >XBox One<br>
             <input type="checkbox" name="Nintendo Switch" >Nintendo Switch<br>
         </p>
         <p>
-            注册条款<br>
+            <span>注册条款</span><br>
             <textarea readonly>
             1、本站服务条款
 本站提供的服务将完全按照服务条款严格执行。用户必须完全同意所有服务条款并完成注册程序，才能成为本站的正式用户。
@@ -140,12 +141,13 @@
 本站定义的网络服务内容包括：文字、软件、声音、图片、录象、图表中的全部内容；电子邮件的全部内容；本站为用户提供的其他信息。所有这些内容受版权、商标、标签和其它财产所有权法律的保护。所以，用户只能在本站授权下才能使用这些内容，而不能擅自复制、再造这些内容、或创造与内容有关的派生产品。本站内所有的文章、资讯、资料、数据版权归原文作者和本站共同所有，任何人需要转载，必须征得原文作者或本站授权。本站注册用户在本站社区发表的作品，本站有权在网站内免费使用。
 13、法律
 网络服务条款要与中华人民共和国的法律解释相一致，用户和本站一致同意服从高等法院所有管辖。如发生本站服务条款与中华人民共和国法律相抵触时，则这些条款将完全按法律规定重新解释，而其它条款则依旧保持对用户产生法律效力和影响。
-            </textarea><br>
-        <input type="radio" value="agree" name="agree" checked>同意
-        <input type="radio" value="disagree" name="agree">不同意
-        </p>
+            </textarea>
+            <br>
+            <input type="radio" value="agree" name="agree" checked>同意
+            <input type="radio" value="disagree" name="agree">不同意
+             </p>
         <p>
-        验证码<br>
+            <span>验证码</span><br>
         <div> <input type="text" name="test" pattern="^7318$" required><img src="images/testimage.png"></div>
         </p>
         <p>
